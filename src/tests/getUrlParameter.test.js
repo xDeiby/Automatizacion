@@ -19,5 +19,26 @@
       return resp;
     }
  * 
+ * Probar con las siguientes URLS
  * 
  */
+
+const  {getUrlParameter}  = require('../generales/Utils');
+
+var url1;
+var sParam1;
+var expected_c1;
+
+
+
+beforeAll(() => {
+  url1 = "https://acreditaonline.sharepoint.com/SitePages/homePage.aspx?ri=5&mobile=0&ca=1";
+  sParam1 = "ca";
+  expected_c1 = "1";
+
+});
+
+
+test('Utils.js => getUrlParameter => El valor esperado debiese ser 1', () => {
+  expect(getUrlParameter(url1,sParam1)).toBe(expected_c1);
+});
