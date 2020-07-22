@@ -80,9 +80,9 @@ beforeAll(() => {
   end2 = new Date(2020, 11, 3);
   expected_c2 = "0 años, 0 meses, 0 días";
 
-  start3 = new Date(2020, 11, 3);
-  end3 = new Date(2018, 11, 3);
-  expected_c3 = "0 años, 0 meses, 0 días";
+  // start3 = new Date(2020, 11, 3);
+  // end3 = new Date(2018, 11, 3);
+  // expected_c3 = "0 años, 0 meses, 0 días";
 
   start4 = new Date(2020, 11, 3);
   end4 = null;
@@ -102,31 +102,35 @@ beforeAll(() => {
 
 });
 
-test('Utils.js => getDiffFullDate => las fechas son lejanas, 11 años lejanas (2009-2020)', () => {
+test('CASO 1: Utils.js => getDiffFullDate => las fechas son lejanas, 11 años lejanas (2009-2020)', () => {
   expect(getDiffFullDate(start1,end1)).toBe(expected_c1);
 });
 
-test('Utils.js => getDiffFullDate => las fechas son iguales', () => {
+test('CASO 2: Utils.js => getDiffFullDate => las fechas son iguales', () => {
   expect(getDiffFullDate(start2,end2)).toBe(expected_c2);
 });
 
-test('Utils.js => getDiffFullDate => La fecha de inicio es mas vieja que la fecha de fin', () => {
-  expect(getDiffFullDate(start3,end3)).toBe(expected_c3);
-});
+// test('Utils.js => getDiffFullDate => La fecha de inicio es mas vieja que la fecha de fin', () => {
+//   expect(getDiffFullDate(start3,end3)).toBe(expected_c3);
+// });
 
-test('Utils.js => getDiffFullDate => La fecha de inicio es correcta, la fecha de termino es null', () => {
+test('CASO 3: Utils.js => getDiffFullDate => La fecha de inicio es correcta, la fecha de termino es null', () => {
   expect(getDiffFullDate(start4,end4)).toBe(expected_c4);
 });
 
-test('Utils.js => getDiffFullDate => La fecha de inicio es null la fecha de termino es correcta', () => {
+test('CASO 4: Utils.js => getDiffFullDate => La fecha de inicio es null la fecha de termino es correcta', () => {
   expect(getDiffFullDate(start5,end5)).toBe(expected_c5);
 });
 
-test('Utils.js => getDiffFullDate => La fecha de inicio y la fecha de termino son null', () => {
+test('CASO 5: Utils.js => getDiffFullDate => La fecha de inicio es null la fecha de termino es null', () => {
   expect(getDiffFullDate(start5,end5)).toBe(expected_c5);
 });
 
-test('Utils.js => getDiffFullDate => Las fechas se separan por 1 año y 2 horas', () => {
-  expect(getDiffFullDate(start5,end5)).toBe(expected_c5);
-});
+// test('Utils.js => getDiffFullDate => La fecha de inicio y la fecha de termino son null', () => {
+//   expect(getDiffFullDate(start5,end5)).toBe(expected_c5);
+// });
+
+// test('Utils.js => getDiffFullDate => Las fechas se separan por 1 año y 2 horas', () => {
+//   expect(getDiffFullDate(start5,end5)).toBe(expected_c5);
+// });
 

@@ -1,9 +1,9 @@
 const functions = require('../homepage/academico');
 
-test('La informacion del usuario existe', () => {
-    expect(functions.academico('asdasdsad')).toBe(1);
+test('CASO 1: UserInfo definido', () => {
+    expect(functions.academico('---')).toBe(1);
 });
 
-test('La informacion del usuario no existe', () => {
+test('CASO 2: UserInfor es un valor Nulo', () => {
     expect(functions.academico(null)).toBe(0);
 });

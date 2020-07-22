@@ -49,7 +49,7 @@ beforeAll(() => {
 
 
   expected_c1 = "15-05-2015";
-  expected_c2 = "15-05-2015";
+  expected_c2 = "2015-05-15";
   expected_c3 = "15-05-2015";
   expected_c4 = "-";
   expected_c5 = "-";
@@ -60,30 +60,30 @@ beforeAll(() => {
 });
 
 
-test('Utils.js => getDate => fecha deberia ser: 2015-05-15', () => {
+test('CASO 1: Utils.js => getDate => fecha deberia ser: 2015-05-15', () => {
   expect(getDate(fecha_c1)).toBe(expected_c1);
 });
 
-test('Utils.js => getDate => funcion recibe como input "15-05-2015" ', () => {
+test('CASO 2: Utils.js => getDate => funcion recibe como input "15-05-2015" ', () => {
   expect(getDate(fecha_c2)).toBe(expected_c2);
 });
 
-test('Utils.js => getDate => funcion recibe como input "2015/05/15"', () => {
+test('CASO 3: Utils.js => getDate => funcion recibe como input "2015/05/15"', () => {
   expect(getDate(fecha_c3)).toBe(expected_c3);
 });
 
-test('Utils.js => getDate => funcion recibe como input "Other string"', () => {
+test('CASO 4: Utils.js => getDate => funcion recibe como input "Other string"', () => {
   expect(getDate(fecha_c4)).toBe(expected_c4);
 });
 
-test('Utils.js => getDate => funcion recibe como input ""', () => {
+test('CASO 5: Utils.js => getDate => funcion recibe como input ""', () => {
   expect(getDate(fecha_c5)).toBe(expected_c5);
 });
 
-test('Utils.js => getDate => funcion recibe como input null', () => {
+test('CASO 6: Utils.js => getDate => funcion recibe como input null', () => {
   expect(getDate(fecha_c6)).toBe(expected_c6);
 });
 
-test('Utils.js => getDate => funcion recibe como input un int', () => {
+test('CASO 7: Utils.js => getDate => funcion recibe como input un int', () => {
   expect(getDate(fecha_c7)).toBe(expected_c7);
 });

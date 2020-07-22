@@ -34,7 +34,7 @@ const idProcessDefined = (unidadProceso) => {
         // unidadProceso = items[0].CarreraOPrograma.replace(/(\d*;#)/, "");
         return 1
     } else {
-        unidadProceso = userInfo.unidad;
+        // unidadProceso = userInfo.unidad;
         return 0
     }
 }

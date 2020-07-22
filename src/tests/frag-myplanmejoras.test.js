@@ -123,34 +123,34 @@ beforeAll(() => {
     
 })
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 100', () => {
+test('CASO 1: myplanmejoras.js => porcentaje tareas completadas deberia ser 100', () => {
     expect(myplanmejoras(listaTareas_asumed_c1)).toBe(expected_c1);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
+test('CASO 2: myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
     expect(myplanmejoras(listaTareas_asumed_c2)).toBe(expected_c2);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 25', () => {
+test('CASO 3: myplanmejoras.js => porcentaje tareas completadas deberia ser 25', () => {
     expect(myplanmejoras(listaTareas_asumed_c3)).toBe(expected_c3);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 50', () => {
+test('CASO 4: myplanmejoras.js => porcentaje tareas completadas deberia ser 50', () => {
     expect(myplanmejoras(listaTareas_asumed_c4)).toBe(expected_c4);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 75', () => {
+test('CASO 5: myplanmejoras.js => porcentaje tareas completadas deberia ser 75', () => {
     expect(myplanmejoras(listaTareas_asumed_c5)).toBe(expected_c5);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 100', () => {
+test('CASO 6: myplanmejoras.js => porcentaje tareas completadas deberia ser 100', () => {
     expect(myplanmejoras(listaTareas_asumed_c6)).toBe(expected_c6);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
+test('CASO 7: myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
     expect(myplanmejoras(listaTareas_asumed_c7)).toBe(expected_c7);
 });
 
-test('myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
+test('CASO 8: myplanmejoras.js => porcentaje tareas completadas deberia ser 0', () => {
     expect(myplanmejoras(listaTareas_asumed_c8)).toBe(expected_c8);
 });
